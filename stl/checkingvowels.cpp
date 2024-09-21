@@ -36,5 +36,6 @@ int main()
     cout<<"count of consonent: "<<con<<endl;
     display(vec1);
     display(vec2);
+    cout<<vec2.size();
     return 0;
 }
