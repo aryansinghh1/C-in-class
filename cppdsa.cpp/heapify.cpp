@@ -22,6 +22,19 @@ void minheapify(int heap[],int size,int i){
         }
     }
 }
+void deleteroot(int heap[],int &size){
+    if (size <= 0){
+        cout<<"heap is empty"<<endl;
+        return;
+    }
+    if (size == 1){
+        size--;
+        return;
+    }
+    heap[0]=heap[size-1];
+    size--;
+    minheapify(heap,size,0);
+}
 
 void insertminheap(int heap[],&size, int value){
     heap[size]= value;
